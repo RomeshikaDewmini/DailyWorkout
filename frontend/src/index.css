@@ -1,0 +1,179 @@
+
+/*Nav bar styles*/
+header {
+    background-color: #0077b6; /* A vibrant blue background */
+    color: #ffffff; /* White text for contrast */
+    padding: 16px 0; /* Vertical padding for spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky; /* Sticks the header at the top on scroll */
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other elements */
+}
+
+header .container {
+    max-width: 1200px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the content */
+    padding: 0 16px; /* Adds horizontal padding */
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Spaces items apart */
+}
+
+header h1 {
+    font-size: 1.8rem; /* Slightly larger font size */
+    margin: 0; /* Removes default margin */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+header a {
+    text-decoration: none; /* Removes underline from links */
+    color: #ffffff; /* White text for the link */
+}
+
+header a:hover h1 {
+    color: #ffdd00; /* Changes color on hover for interactivity */
+}
+
+
+
+/*WORKOUT CARD STYLES*/
+.workout-details {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #e0e0e0; /* Light gray border for structure */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px; /* Inner spacing */
+    margin: 16px 0; /* Spacing between cards */
+    margin-left: 30px;
+    max-width: 500px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover animation */
+}
+
+.workout-details h4 {
+    font-size: 1.5rem; /* Larger font size for the title */
+    color: #0077b6; /* Dark gray for readability */
+    margin-top: auto;
+    margin-bottom: 8px; /* Spacing below the title */
+}
+
+.workout-details p {
+    font-size: 1rem; /* Base font size */
+    color: #666; /* Medium gray for supporting text */
+    margin: 4px 0; /* Consistent spacing between lines */
+}
+
+.workout-details p strong {
+    color: #444; /* Slightly darker gray for emphasis */
+}
+
+.workout-details:hover {
+    transform: translateY(-4px); /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.workout-details p:last-of-type {
+    font-size: 0.9rem; /* Slightly smaller for less important info */
+    color: #999; /* Light gray for timestamps */
+}
+
+/* Add these styles to your CSS file */
+.delete-btn {
+    background-color: #f44336; /* Red color for delete */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e53935; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .delete-btn:active {
+    background-color: #d32f2f; /* Dark red when clicked */
+  }
+  
+
+/*workout form styles*/
+.create {
+    position: fixed; /* Fix the form in place */
+    top: 90px; /* Position it 20px from the top */
+    right: 20px; /* Position it 20px from the right */
+    width: 300px; /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.create h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.create label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.create input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.create input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 4px rgba(0, 119, 182, 0.4);
+}
+
+.create button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.create button:hover {
+    background-color: #005f8d;
+    transform: scale(1.02);
+}
+
+.create button:active {
+    background-color: #003f5c;
+    transform: scale(0.98);
+}
+
+.error {
+    margin-top: 10px;
+    padding: 10px;
+    color: #d32f2f;
+    background-color: #fbeaea;
+    border: 1px solid #d32f2f;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
